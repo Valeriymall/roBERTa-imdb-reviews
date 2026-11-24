@@ -8,7 +8,7 @@ Fine-tunes `roberta-base` to classify movie reviews as positive or negative.
 
 ## Setup
 
-- Model: `roberta-base`, max sequence length 512, 2 epochs, learning rate 2e-5
+- Model: `roberta-base`, max sequence length 512, 2 epochs, learning rate 2e-5 (vs. similar bert-base with 256 tokens where I got 92.2% test accuracy)
 - Data: [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb), with 10% of the training set held out for validation
 - Best checkpoint chosen on validation accuracy only, so the test set was not used for selection
 - Trained on an AMD RX 9070 XT (ROCm)
